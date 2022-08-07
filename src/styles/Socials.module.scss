@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  column-gap: 22.5px;
+  align-items: center;
+
+
+  .link {
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+      transition: 0.1s;
+      transform: scale(1.2);
+    }
+  }
+}

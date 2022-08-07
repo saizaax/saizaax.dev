@@ -3,6 +3,7 @@ import Head from "next/head"
 import styles from "@styles/Home.module.scss"
 
 import { Header } from "@components/Header"
+import { Intro } from "@blocks/Intro"
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>saizaax.dev</h1>
+        <Intro />
       </main>
     </div>
   )

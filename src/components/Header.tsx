@@ -9,7 +9,7 @@ import sun from "@icons/sun.svg"
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <Link href="/">
         <div className={styles.logo}>
           <Image
@@ -34,7 +34,7 @@ const Header = () => {
       <button className={styles.theme}>
         <Image src={sun} alt="light-theme" />
       </button>
-    </div>
+    </header>
   )
 }
 

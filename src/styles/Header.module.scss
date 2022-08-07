@@ -1,7 +1,11 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
   display: flex;
-  padding: 0 178.5px;
-  height: 90px;
+  flex-wrap: wrap;
+  padding: 15px 178.5px;
   align-items: center;
   justify-content: space-between;
 
@@ -21,7 +25,7 @@
       line-height: 26px;
 
       span {
-        color: #98FE97;
+        color: #98fe97;
       }
     }
   }
@@ -42,7 +46,7 @@
       transition: 0.1s;
 
       &:hover {
-        color: #98FE97;
+        color: #98fe97;
         transition: 0.1s;
       }
     }
