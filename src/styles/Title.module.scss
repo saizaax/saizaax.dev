@@ -20,11 +20,15 @@
   }
 
   .title {
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 115px;
-    color: var(--title-color);
-    margin: 0;
+    display: flex;
+
+    h1 {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 115px;
+      color: var(--title-color);
+      margin: 0;
+    }
   }
 
   .occupation {
@@ -45,5 +49,42 @@
     top: calc(50% + 10px);
     left: calc(50% - 15px);
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 590px) {
+    position: relative;
+    bottom: 35px;
+    align-items: flex-start;
+
+    .title {
+      flex-direction: column;
+
+      .dev {
+        position: relative;
+        bottom: 30px;
+      }
+    }
+
+    .occupation {
+      position: relative;
+      bottom: 15px;
+    }
+    
+    .memoji {
+      position: relative;
+      left: 0;
+      top: 40px;
+      transform: translateX(-25%);
+      order: -1;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .title {
+      h1 {
+        font-size: 72px;
+        line-height: 90px;
+      }
+    }
   }
 }

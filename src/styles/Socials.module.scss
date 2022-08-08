@@ -13,4 +13,9 @@
       transform: scale(1.2);
     }
   }
+
+  @media screen and (max-width: 590px) {
+    position: relative;
+    bottom: 35px;
+  }
 }

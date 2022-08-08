@@ -17,4 +17,10 @@
     backdrop-filter: blur(15px);
     background-color: rgba($color: var(--title-container-color), $alpha: 0.1);
   }
+
+  @media screen and (max-width: 590px) {
+    .container {
+      align-items: flex-start;
+    }
+  }
 }

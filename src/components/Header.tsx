@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "@styles/Header.module.scss"
+import { useTheme } from "next-themes"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -7,7 +8,8 @@ import Link from "next/link"
 import memoji from "@assets/memoji.png"
 import sun from "@icons/sun.svg"
 import moon from "@icons/moon.svg"
-import { useTheme } from "next-themes"
+import menuLight from "@icons/menu-light.svg"
+import menuDark from "@icons/menu-dark.svg"
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
@@ -21,13 +23,16 @@ const Header = () => {
     <header className={styles.header}>
       <Link href="/">
         <div className={styles.logo}>
-          <Image
-            src={memoji}
-            alt="saizaax.dev"
-            priority={true}
-            width={50}
-            height={50}
-          />
+          <span className={styles.logoImage}>
+            <Image
+              src={memoji}
+              alt="saizaax.dev"
+              priority={true}
+              width={50}
+              height={50}
+              layout="fixed"
+            />
+          </span>
           <h3>
             saizaax<span>.dev</span>
           </h3>
@@ -42,13 +47,48 @@ const Header = () => {
       </div>
       {theme === "dark" ? (
         <button className={styles.theme} onClick={() => setTheme("light")}>
-          <Image src={sun} alt="theme-toggle" priority={true} />
+          <Image
+            src={sun}
+            alt="theme-toggle"
+            width={24}
+            height={24}
+            priority={true}
+            layout="fixed"
+          />
         </button>
       ) : (
         <button className={styles.theme} onClick={() => setTheme("dark")}>
-          <Image src={moon} alt="theme-toggle" priority={true} />
+          <Image
+            src={moon}
+            alt="theme-toggle"
+            width={24}
+            height={24}
+            priority={true}
+            layout="fixed"
+          />
         </button>
       )}
+      <button className={styles.menu}>
+        {theme === "dark" ? (
+          <Image
+            src={menuLight}
+            alt="menu"
+            width={24}
+            height={24}
+            priority={true}
+            layout="fixed"
+          />
+        ) : (
+          <Image
+            src={menuDark}
+            alt="menu"
+            width={24}
+            height={24}
+            priority={true}
+            layout="fixed"
+          />
+        )}
+      </button>
     </header>
   )
 }

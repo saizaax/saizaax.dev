@@ -8,7 +8,10 @@ const Title = () => {
   return (
     <div className={styles.container}>
       <p className={styles.name}>Korolkov Alexander</p>
-      <h1 className={styles.title}>saizaax.dev</h1>
+      <div className={styles.title}>
+        <h1>saizaax</h1>
+        <h1 className={styles.dev}>.dev</h1>
+      </div>
       <p className={styles.occupation}>Frontend Developer ・ UI/UX Designer</p>
       <div className={styles.memoji}>
         <Image
