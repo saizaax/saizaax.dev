@@ -6,8 +6,17 @@ import Link from "next/link"
 
 import memoji from "@assets/memoji.png"
 import sun from "@icons/sun.svg"
+import moon from "@icons/moon.svg"
+import { useTheme } from "next-themes"
 
 const Header = () => {
+  const { theme, setTheme } = useTheme()
+
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => setMounted(true), [])
+  if (!mounted) return null
+
   return (
     <header className={styles.header}>
       <Link href="/">
@@ -31,9 +40,15 @@ const Header = () => {
         <Link href="/">Skills</Link>
         <Link href="/">Contacts</Link>
       </div>
-      <button className={styles.theme}>
-        <Image src={sun} alt="light-theme" />
-      </button>
+      {theme === "dark" ? (
+        <button className={styles.theme} onClick={() => setTheme("light")}>
+          <Image src={sun} alt="theme-toggle" priority={true} />
+        </button>
+      ) : (
+        <button className={styles.theme} onClick={() => setTheme("dark")}>
+          <Image src={moon} alt="theme-toggle" priority={true} />
+        </button>
+      )}
     </header>
   )
 }

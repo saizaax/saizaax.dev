@@ -9,8 +9,8 @@
   align-items: center;
   justify-content: space-between;
 
-  background: rgba(14, 14, 15, 0.01);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--header-background);
+  border-bottom: var(--header-border);
   backdrop-filter: blur(15px);
 
   .logo {
@@ -23,9 +23,10 @@
       font-weight: 600;
       font-size: 22px;
       line-height: 26px;
+      color: var(--logo-color);
 
       span {
-        color: #98fe97;
+        color: var(--logo-primary-color);
       }
     }
   }
@@ -44,9 +45,10 @@
       font-size: 16px;
       line-height: 19px;
       transition: 0.1s;
+      color: var(--link-color);
 
       &:hover {
-        color: #98fe97;
+        color: var(--link-primary-color);
         transition: 0.1s;
       }
     }

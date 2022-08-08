@@ -1,11 +1,18 @@
 import type { NextPage } from "next"
+import React from "react"
 import Head from "next/head"
 import styles from "@styles/Home.module.scss"
 
 import { Header } from "@components/Header"
 import { Intro } from "@blocks/Intro"
+import { Loader } from "@components/blocks/Loader"
 
 const Home: NextPage = () => {
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => setMounted(true), [])
+  if (!mounted) return <Loader />
+
   return (
     <div className={styles.container}>
       <Head>

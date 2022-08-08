@@ -7,8 +7,8 @@ body {
 }
 
 body {
-  background: #FFFFFF;
-  color: #031B4E;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a {
@@ -18,15 +18,5 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: white;
-    background: #0F0F10;
-  }
+  transition: background-color 0.5s ease;
 }

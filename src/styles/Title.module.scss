@@ -13,7 +13,7 @@
     line-height: 17px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--title-name-color);
     margin: 0;
     position: relative;
     top: 20px;
@@ -23,7 +23,7 @@
     font-weight: 700;
     font-size: 96px;
     line-height: 115px;
-    color: #ffffff;
+    color: var(--title-color);
     margin: 0;
   }
 
@@ -36,7 +36,7 @@
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #98fe97;
+    color: var(--title-occupation-color);
     margin: 0;
   }
 
