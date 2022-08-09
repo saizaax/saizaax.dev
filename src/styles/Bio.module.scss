@@ -1,4 +1,4 @@
-.bio {
+.container {
   display: flex;
   column-gap: 30px;
   align-items: center;
@@ -36,5 +36,10 @@
       background-color: var(--bio-designer-color);
       background-image: var(--bio-designer-gradient);
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

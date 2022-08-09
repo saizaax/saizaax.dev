@@ -44,6 +44,8 @@
     row-gap: 30px;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 75px;
 
     a {
       color: var(--text-color);

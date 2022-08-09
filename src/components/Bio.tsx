@@ -7,7 +7,7 @@ import avatar from "@assets/avatar.png"
 
 const Bio = () => {
   return (
-    <div className={styles.bio}>
+    <div className={styles.container}>
       <div className={styles.avatar}>
         <Image
           src={avatar}
@@ -20,8 +20,9 @@ const Bio = () => {
       <h1>
         Hi, my name is <span className={styles.name}>Korolkov Alexander.</span>
         <br />
-        I’m a <span className={styles.developer}>Frontend Developer</span> &{" "}
-        <span className={styles.designer}>UI UX Designer.</span>
+        I’m a <span className={styles.developer}>
+          Frontend Developer
+        </span> & <span className={styles.designer}>UI UX Designer.</span>
       </h1>
     </div>
   )

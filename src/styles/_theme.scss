@@ -1,5 +1,6 @@
 [data-theme="light"] {
   /** Main **/
+  --accent-color: #0168ff;
   --background-color: #ffffff;
   --text-color: #031b4e;
 
@@ -44,11 +45,7 @@
   --heading-subtitle-color: #8d96ab;
 
   /** Bio **/
-  --bio-container-border: linear-gradient(
-    270deg,
-    rgba(3, 27, 78, 0.1) 0%,
-    rgba(3, 27, 78, 0.03) 100%
-  );
+  --bio-container-border: rgba(3, 27, 78, 0.05);
 
   --bio-name-color: #007cf0;
   --bio-name-gradient: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
@@ -58,10 +55,14 @@
 
   --bio-designer-color: #ff4d4d;
   --bio-designer-gradient: linear-gradient(90deg, #ff4d4d 0%, #f9cb28 100%);
+
+  /** Bio Item **/
+  --bio-item-border-color: #efefef;
 }
 
 [data-theme="dark"] {
   /** Background **/
+  --accent-color: #98fe97;
   --background-color: #0f0f10;
   --text-color: #ffffff;
 
@@ -106,11 +107,7 @@
   --heading-subtitle-color: #a1a0ab;
 
   /** Bio **/
-  --bio-container-border: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.03) 100%
-  );
+  --bio-container-border: rgba(255, 255, 255, 0.05);
 
   --bio-name-color: #007cf0;
   --bio-name-gradient: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
@@ -120,4 +117,7 @@
 
   --bio-designer-color: #ff4d4d;
   --bio-designer-gradient: linear-gradient(90deg, #ff4d4d 0%, #f9cb28 100%);
+
+  /** Bio Item **/
+  --bio-item-border-color: #272728;
 }
