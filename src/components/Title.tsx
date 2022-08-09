@@ -12,7 +12,7 @@ const Title = () => {
         <h1>saizaax</h1>
         <h1 className={styles.dev}>.dev</h1>
       </div>
-      <p className={styles.occupation}>Frontend Developer ・ UI/UX Designer</p>
+      <p className={styles.occupation}>Frontend Developer ・ UI UX Designer</p>
       <div className={styles.memoji}>
         <Image
           src={memoji}

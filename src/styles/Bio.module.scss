@@ -1,0 +1,40 @@
+.bio {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+
+  .avatar {
+    width: 175px;
+    height: 175px;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--text-color);
+
+    span {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+
+    .name {
+      background-color: var(--bio-name-color);
+      background-image: var(--bio-name-gradient);
+    }
+
+    .developer {
+      background-color: var(--bio-developer-color);
+      background-image: var(--bio-developer-gradient);
+    }
+
+    .designer {
+      background-color: var(--bio-designer-color);
+      background-image: var(--bio-designer-gradient);
+    }
+  }
+}

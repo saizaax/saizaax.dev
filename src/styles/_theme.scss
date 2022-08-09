@@ -25,11 +25,39 @@
   /** Title **/
   --title-container-color: #ffffff;
   --title-color: #031b4e;
-  --title-name-color: rgba(77, 91, 124, 0.5);
+  --title-name-color: rgba(77, 91, 124, 0.75);
   --title-occupation-color: #0168ff;
 
   /** Socials **/
   --socials-github-color: #000000;
+
+  /** Separator **/
+  --separator-color: rgba(3, 27, 78, 0.05);
+  --separator-primary-gradient: linear-gradient(
+    180deg,
+    #0168ff 0%,
+    #50bae7 100%
+  );
+
+  /** Heading **/
+  --heading-title-color: #031b4e;
+  --heading-subtitle-color: #8d96ab;
+
+  /** Bio **/
+  --bio-container-border: linear-gradient(
+    270deg,
+    rgba(3, 27, 78, 0.1) 0%,
+    rgba(3, 27, 78, 0.03) 100%
+  );
+
+  --bio-name-color: #007cf0;
+  --bio-name-gradient: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
+
+  --bio-developer-color: #7928ca;
+  --bio-developer-gradient: linear-gradient(90deg, #7928ca 0%, #ff0080 100%);
+
+  --bio-designer-color: #ff4d4d;
+  --bio-designer-gradient: linear-gradient(90deg, #ff4d4d 0%, #f9cb28 100%);
 }
 
 [data-theme="dark"] {
@@ -64,4 +92,32 @@
 
   /** Socials **/
   --socials-github-color: #ffffff;
+
+  /** Separator **/
+  --separator-color: rgba(255, 255, 255, 0.05);
+  --separator-primary-gradient: linear-gradient(
+    180deg,
+    #64efd7 0%,
+    #9ffba2 100%
+  );
+
+  /** Heading **/
+  --heading-title-color: #ffffff;
+  --heading-subtitle-color: #a1a0ab;
+
+  /** Bio **/
+  --bio-container-border: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+
+  --bio-name-color: #007cf0;
+  --bio-name-gradient: linear-gradient(90deg, #007cf0 0%, #00dfd8 100%);
+
+  --bio-developer-color: #7928ca;
+  --bio-developer-gradient: linear-gradient(90deg, #7928ca 0%, #ff0080 100%);
+
+  --bio-designer-color: #ff4d4d;
+  --bio-designer-gradient: linear-gradient(90deg, #ff4d4d 0%, #f9cb28 100%);
 }

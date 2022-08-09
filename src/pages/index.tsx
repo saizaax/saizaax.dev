@@ -6,6 +6,8 @@ import styles from "@styles/Home.module.scss"
 import { Header } from "@components/Header"
 import { Intro } from "@blocks/Intro"
 import { Loader } from "@components/blocks/Loader"
+import { Separator } from "@components/Separator"
+import { Biography } from "@components/blocks/Biography"
 
 const Home: NextPage = () => {
   const [mounted, setMounted] = React.useState(false)
@@ -23,6 +25,8 @@ const Home: NextPage = () => {
       <Header />
       <main className={styles.main}>
         <Intro />
+        <Separator />
+        <Biography />
       </main>
     </div>
   )
