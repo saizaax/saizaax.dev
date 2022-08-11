@@ -9,7 +9,7 @@ import { ProjectLinks } from "@components/ProjectLinks"
 import { ProjectPreview } from "@components/ProjectPreview"
 import { ProjectBlur } from "@components/ProjectBlur"
 
-import { Icon } from "src/types/StackIcon.type"
+import { Icon } from "@custom-types/StackIcon.type"
 
 type Props = {
   name: string

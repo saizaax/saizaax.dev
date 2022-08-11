@@ -3,7 +3,7 @@ import styles from "@styles/ProjectStack.module.scss"
 
 import { StackIcon } from "@components/StackIcon"
 
-import { Icon } from "src/types/StackIcon.type"
+import { Icon } from "@custom-types/StackIcon.type"
 
 type Props = {
   stack: Icon[]
