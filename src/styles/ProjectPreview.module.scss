@@ -1,0 +1,19 @@
+.preview {
+  display: flex;
+  padding-top: 70px;
+  min-height: 370px;
+  flex: 1;
+  position: relative;
+
+  .image {
+    position: absolute;
+    display: flex;
+    width: 570px;
+    height: 370px;
+    bottom: -20px;
+    transition: 0.2s;
+
+    box-shadow: -4px 4px 30px rgba(3, 27, 78, 0.075);
+    border-radius: 8px 8px 0px 0px;
+  }
+}

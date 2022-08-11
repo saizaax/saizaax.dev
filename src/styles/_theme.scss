@@ -58,6 +58,19 @@
 
   /** Bio Item **/
   --bio-item-border-color: #efefef;
+
+  /** Project Card **/
+  --project-card-border-color: rgba(3, 27, 78, 0.05);
+  --project-card-background-gradient: linear-gradient(
+    270deg,
+    rgba(3, 27, 78, 0.0125) 0%,
+    rgba(3, 27, 78, 0.025) 100%
+  );
+
+  --stack-icon-border-color: rgba(77, 91, 124, 0.1);
+  --stack-icon-background-color: rgba(77, 91, 124, 0.015);
+
+  --project-card-description-color: rgba(3, 27, 78, 0.8);
 }
 
 [data-theme="dark"] {
@@ -120,4 +133,17 @@
 
   /** Bio Item **/
   --bio-item-border-color: #272728;
+
+  /** Project Card **/
+  --project-card-border-color: rgba(255, 255, 255, 0.05);
+  --project-card-background-gradient: linear-gradient(
+    270deg,
+    rgba(255, 244, 244, 0.0125) 0%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+
+  --stack-icon-border-color: #202329;
+  --stack-icon-background-color: rgba(32, 35, 41, 0.15);
+
+  --project-card-description-color: #A1A0AB;
 }
