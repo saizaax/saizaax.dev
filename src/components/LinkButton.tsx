@@ -19,9 +19,9 @@ const LinkButton: FC<Props> = ({ children, icon, style, arrow, url }) => {
 
   return (
     <Link href={url}>
-      <button className={`${styles.btn} ${style ? styles[style] : ""}`}>
+      <a className={`${styles.btn} ${style ? styles[style] : ""}`}>
         {children} {icon && arrow ? Icon : icon ? Icon : arrow ? Arrow : null}
-      </button>
+      </a>
     </Link>
   )
 }

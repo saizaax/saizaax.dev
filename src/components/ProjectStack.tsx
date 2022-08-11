@@ -3,8 +3,10 @@ import styles from "@styles/ProjectStack.module.scss"
 
 import { StackIcon } from "@components/StackIcon"
 
+import { Icon } from "src/types/StackIcon.type"
+
 type Props = {
-  stack: string[]
+  stack: Icon[]
 }
 
 const ProjectStack: FC<Props> = ({ stack }) => {

@@ -5,12 +5,13 @@ import Image, { StaticImageData } from "next/image"
 
 type Props = {
   preview: StaticImageData
+  shadow?: boolean
 }
 
-const ProjectPreview: FC<Props> = ({ preview }) => {
+const ProjectPreview: FC<Props> = ({ preview, shadow }) => {
   return (
-    <div className={styles.preview} data-project-preview>
-      <div className={styles.image}>
+    <div className={styles.preview} data-project-preview={true}>
+      <div className={styles.image} data-project-preview-shadow={shadow}>
         <Image
           src={preview}
           alt="preview"

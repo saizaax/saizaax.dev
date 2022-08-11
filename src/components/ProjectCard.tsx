@@ -9,6 +9,8 @@ import { ProjectLinks } from "./ProjectLinks"
 import { ProjectPreview } from "./ProjectPreview"
 import { ProjectBlur } from "./ProjectBlur"
 
+import { Icon } from "src/types/StackIcon.type"
+
 type Props = {
   name: string
   description: string
@@ -16,10 +18,11 @@ type Props = {
   logoLight: string
   url?: string
   github: string
-  stack: string[]
+  stack: Icon[]
   preview: StaticImageData
   blur: StaticImageData
   type?: "double"
+  previewShadow?: boolean
 }
 
 const ProjectCard: FC<Props> = ({
@@ -32,7 +35,8 @@ const ProjectCard: FC<Props> = ({
   stack,
   preview,
   blur,
-  type
+  type,
+  previewShadow
 }) => {
   return (
     <div className={`${styles.card} ${type ? styles.double : ""}`}>
@@ -51,7 +55,7 @@ const ProjectCard: FC<Props> = ({
       </div>
 
       {/* Preview Image */}
-      <ProjectPreview preview={preview} />
+      <ProjectPreview preview={preview} shadow={previewShadow} />
 
       {/* Blur */}
       <ProjectBlur blur={blur} />
