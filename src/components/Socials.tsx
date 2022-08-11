@@ -1,7 +1,9 @@
 import React from "react"
 import styles from "@styles/Socials.module.scss"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useTheme } from "next-themes"
 
 import telegram from "@assets/socials/telegram.svg"
 import githubDark from "@assets/socials/github.svg"
@@ -9,7 +11,6 @@ import githubLight from "@assets/socials/github-light.svg"
 import behance from "@assets/socials/behance.svg"
 import dribbble from "@assets/socials/dribbble.svg"
 import twitter from "@assets/socials/twitter.svg"
-import { useTheme } from "next-themes"
 
 const Socials = () => {
   const { theme } = useTheme()

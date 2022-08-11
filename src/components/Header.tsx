@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "@styles/Header.module.scss"
-import { useTheme } from "next-themes"
 
 import Image from "next/image"
 import Link from "next/link"
+import { useTheme } from "next-themes"
 
 import memoji from "@assets/memoji.png"
 import sun from "@icons/sun.svg"
@@ -11,8 +11,8 @@ import moon from "@icons/moon.svg"
 import menuLight from "@icons/menu-light.svg"
 import menuDark from "@icons/menu-dark.svg"
 
-import { Menu } from "./Menu"
-import { Links } from "./Links"
+import { Menu } from "@components/Menu"
+import { Links } from "@components/Links"
 
 const Header = () => {
   const { theme, setTheme } = useTheme()

@@ -2,11 +2,12 @@ import React, { FC } from "react"
 import styles from "@styles/Menu.module.scss"
 
 import Image from "next/image"
+import { useTheme } from "next-themes"
 
 import closeDark from "@icons/close-dark.svg"
 import closeLight from "@icons/close-light.svg"
-import { Links } from "./Links"
-import { useTheme } from "next-themes"
+
+import { Links } from "@components/Links"
 
 type Props = {
   onClick: (value: boolean) => void

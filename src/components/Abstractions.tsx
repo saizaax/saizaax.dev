@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import styles from "@styles/Abstractions.module.scss"
+
 import Image from "next/image"
 
 import neon from "@assets/abstract-neon.png"

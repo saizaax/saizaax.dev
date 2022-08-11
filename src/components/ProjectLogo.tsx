@@ -1,7 +1,7 @@
-import { useTheme } from "next-themes"
 import React, { FC } from "react"
 
 import Image from "next/image"
+import { useTheme } from "next-themes"
 
 type Props = {
   logoDark: string

@@ -1,9 +1,10 @@
 import React, { FC } from "react"
 import styles from "@styles/LinkButton.module.scss"
+
+import Link from "next/link"
 import Image from "next/image"
 
 import arrowIcon from "@icons/arrow.svg"
-import Link from "next/link"
 
 type Props = {
   children?: React.ReactNode

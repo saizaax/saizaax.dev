@@ -3,11 +3,11 @@ import styles from "@styles/ProjectCard.module.scss"
 
 import { StaticImageData } from "next/image"
 
-import { ProjectLogo } from "./ProjectLogo"
-import { ProjectStack } from "./ProjectStack"
-import { ProjectLinks } from "./ProjectLinks"
-import { ProjectPreview } from "./ProjectPreview"
-import { ProjectBlur } from "./ProjectBlur"
+import { ProjectLogo } from "@components/ProjectLogo"
+import { ProjectStack } from "@components/ProjectStack"
+import { ProjectLinks } from "@components/ProjectLinks"
+import { ProjectPreview } from "@components/ProjectPreview"
+import { ProjectBlur } from "@components/ProjectBlur"
 
 import { Icon } from "src/types/StackIcon.type"
 

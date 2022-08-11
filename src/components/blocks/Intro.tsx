@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 import styles from "@styles/Intro.module.scss"
 
-import { Socials } from '@components/Socials'
-import { Title } from '@components/Title'
-import { Abstractions } from '@components/Abstractions'
+import { Socials } from "@components/Socials"
+import { Title } from "@components/Title"
+import { Abstractions } from "@components/Abstractions"
 
 const Intro = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { FC } from "react"
 import styles from "@styles/BioItem.module.scss"
 
-import { BioItemLine } from "./BioItemLine"
+import { BioItemLine } from "@components/BioItemLine"
 
 type Props = {
   name: string
