@@ -17,6 +17,7 @@ import { Links } from "@components/Links"
 const Header = () => {
   const { theme, setTheme } = useTheme()
 
+  const [menuTop, setMenuTop] = React.useState(0)
   const [mounted, setMounted] = React.useState(false)
   const [menu, setMenu] = React.useState(false)
 
@@ -26,6 +27,15 @@ const Header = () => {
     },
     [setMenu]
   )
+
+  React.useEffect(() => {
+    if (menu) {
+      document.body.style.overflow = "hidden"
+      setMenuTop(window.scrollY)
+    } else {
+      document.body.style.overflow = "auto"
+    }
+  }, [menu])
 
   React.useEffect(() => setMounted(true), [])
   if (!mounted) return null
@@ -98,7 +108,7 @@ const Header = () => {
           )}
         </button>
       </header>
-      {menu ? <Menu onClick={toggleMenu} /> : null}
+      {menu ? <Menu toggleMenu={toggleMenu} menuTop={menuTop} /> : null}
     </React.Fragment>
   )
 }

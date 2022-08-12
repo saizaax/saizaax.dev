@@ -10,16 +10,17 @@ import closeLight from "@icons/close-light.svg"
 import { Links } from "@components/Links"
 
 type Props = {
-  onClick: (value: boolean) => void
+  toggleMenu: (value: boolean) => void
+  menuTop: number
 }
 
-const Menu: FC<Props> = ({ onClick }) => {
+const Menu: FC<Props> = ({ toggleMenu, menuTop }) => {
   const { theme } = useTheme()
 
   return (
-    <div className={styles.menu}>
+    <div className={styles.menu} style={{ top: menuTop }}>
       <div className={styles.head}>
-        <button onClick={() => onClick(false)}>
+        <button onClick={() => toggleMenu(false)}>
           {theme === "dark" ? (
             <Image
               src={closeLight}
@@ -42,7 +43,7 @@ const Menu: FC<Props> = ({ onClick }) => {
         </button>
       </div>
       <div className={styles.links}>
-        <Links />
+        <Links toggleMenu={() => toggleMenu(false)}  />
       </div>
     </div>
   )

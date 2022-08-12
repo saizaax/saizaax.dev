@@ -7,7 +7,7 @@ import { Abstractions } from "@components/Abstractions"
 
 const Intro = () => {
   return (
-    <div className={styles.intro}>
+    <div className={styles.intro} id="intro">
       <Abstractions />
       <div className={styles.container}>
         <Title />

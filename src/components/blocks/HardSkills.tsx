@@ -36,7 +36,7 @@ import figma from "@assets/technologies/figma.svg"
 
 const HardSkills = () => {
   return (
-    <div className={styles.skills}>
+    <div className={styles.skills} id="skills">
       <Heading title="Hard Skills" subtitle="List of technologies 🧑‍💻" />
       <div className={styles.container}>
         {/* Programming */}

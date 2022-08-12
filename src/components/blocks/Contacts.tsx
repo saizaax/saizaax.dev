@@ -9,7 +9,7 @@ import email from "@icons/email.svg"
 
 const Contacts: FC = () => {
   return (
-    <div className={styles.contacts}>
+    <div className={styles.contacts} id="contacts">
       <Heading title="Contacts" subtitle="Feel free to contact me 😉" />
       <div className={styles.container}>
         <ContactLink 

@@ -46,7 +46,7 @@ import nativeDark from "@assets/technologies/native-dark.svg"
 
 const Projects = () => {
   return (
-    <div className={styles.projects}>
+    <div className={styles.projects} id="projects">
       <Heading title="My Projects" subtitle="Made with ❤️ and passion" />
       <div className={styles.container}>
         {/* Uncos */}
