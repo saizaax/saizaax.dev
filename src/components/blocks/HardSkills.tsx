@@ -19,6 +19,20 @@ import nest from "@assets/technologies/nest.svg"
 import mongodb from "@assets/technologies/mongodb.svg"
 import nativeLight from "@assets/technologies/native-light.svg"
 import nativeDark from "@assets/technologies/native-dark.svg"
+import nodejs from "@assets/technologies/nodejs.svg"
+import sass from "@assets/technologies/sass.svg"
+import motion from "@assets/technologies/motion.svg"
+import styled from "@assets/technologies/styled.svg"
+import git from "@assets/technologies/git.svg"
+import actions from "@assets/technologies/actions.svg"
+import photoshop from "@assets/technologies/photoshop.svg"
+import expressDark from "@assets/technologies/express-dark.svg"
+import expressLight from "@assets/technologies/express-light.svg"
+import bash from "@assets/technologies/bash.svg"
+import docker from "@assets/technologies/docker.svg"
+import traefik from "@assets/technologies/traefik.svg"
+import gitlab from "@assets/technologies/gitlab.svg"
+import figma from "@assets/technologies/figma.svg"
 
 const HardSkills = () => {
   return (
@@ -31,7 +45,8 @@ const HardSkills = () => {
             title="Programming"
             technologies={[
               { name: "JavaScript", icon: [js, js] },
-              { name: "TypeScript", icon: [ts, ts] }
+              { name: "TypeScript", icon: [ts, ts] },
+              { name: "Node.js", icon: [nodejs, nodejs] }
             ]}
           />
         </div>
@@ -53,7 +68,80 @@ const HardSkills = () => {
           {/* Libraries */}
           <SkillsGroup
             title="Libraries"
-            technologies={[{ name: "Redux", icon: [redux, redux] }]}
+            technologies={[
+              { name: "Redux", icon: [redux, redux] },
+              { name: "SCSS", icon: [sass, sass] },
+              { name: "Framer Motion", icon: [motion, motion] },
+              { name: "Styled", icon: [styled, styled] }
+            ]}
+          />
+        </div>
+
+        <hr />
+
+        {/* Backend / Databases / ORM */}
+        <div className={styles.row}>
+          {/* Backend */}
+          <SkillsGroup
+            title="Backend"
+            technologies={[
+              { name: "Nest.js", icon: [nest, nest] },
+              { name: "Express.js", icon: [expressDark, expressLight] }
+            ]}
+          />
+
+          {/* Databases */}
+          <SkillsGroup
+            title="Databases"
+            technologies={[
+              { name: "PostgreSQL", icon: [postgresql, postgresql] },
+              { name: "MongoDB", icon: [mongodb, mongodb] }
+            ]}
+          />
+
+          {/* ORM */}
+          <SkillsGroup
+            title="ORM"
+            technologies={[{ name: "Prisma", icon: [prismaDark, prismaLight] }]}
+          />
+        </div>
+
+        <hr />
+
+        {/* Other / DevOps */}
+        <div className={styles.row}>
+          {/* Other */}
+          <SkillsGroup
+            title="Other"
+            technologies={[
+              { name: "Git", icon: [git, git] },
+              { name: "Bash", icon: [bash, bash] }
+            ]}
+          />
+
+          {/* DevOps */}
+          <SkillsGroup
+            title="DevOps"
+            technologies={[
+              { name: "Docker", icon: [docker, docker] },
+              { name: "Traefik", icon: [traefik, traefik] },
+              { name: "GitLab CI/CD", icon: [gitlab, gitlab] },
+              { name: "GitHub Actions", icon: [actions, actions] }
+            ]}
+          />
+        </div>
+
+        <hr />
+
+        {/* Design */}
+        <div className={styles.row}>
+          {/* Design */}
+          <SkillsGroup
+            title="Other"
+            technologies={[
+              { name: "Figma", icon: [figma, figma] },
+              { name: "Photoshop", icon: [photoshop, photoshop] }
+            ]}
           />
         </div>
       </div>
