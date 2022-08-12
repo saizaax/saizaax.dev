@@ -7,7 +7,6 @@ import { SkillsGroup } from "@components/SkillsGroup"
 /** Technologies **/
 import js from "@assets/technologies/js.svg"
 import react from "@assets/technologies/react.svg"
-import spring from "@assets/technologies/spring.svg"
 import postgresql from "@assets/technologies/postgresql.svg"
 import ts from "@assets/technologies/ts.svg"
 import nextLight from "@assets/technologies/next-light.svg"
