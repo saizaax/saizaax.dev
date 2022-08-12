@@ -10,6 +10,7 @@ import { Separator } from "@components/Separator"
 import { Biography } from "@components/blocks/Biography"
 import { Projects } from "@components/blocks/Projects"
 import { HardSkills } from "@components/blocks/HardSkills"
+import { Contacts } from "@components/blocks/Contacts"
 
 const Home: NextPage = () => {
   const [mounted, setMounted] = React.useState(false)
@@ -28,11 +29,17 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Intro />
         <Separator />
+
         <Biography />
         <Separator />
+        
         <Projects />
         <Separator />
+        
         <HardSkills />
+        <Separator />
+
+        <Contacts />
       </main>
     </div>
   )

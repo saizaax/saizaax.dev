@@ -8,7 +8,7 @@ import { BioCharacteristics } from "@components/BioCharacteristics"
 const Biography = () => {
   return (
     <div className={styles.biography}>
-      <Heading title="Biography" subtitle="Few words about 🤓 me" />
+      <Heading title="Biography" subtitle="Few words about me 🤓" />
       <div className={styles.container}>
         <div className={styles.bio}>
           <Bio />
