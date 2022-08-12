@@ -11,7 +11,9 @@ const Intro = () => {
       <Abstractions />
       <div className={styles.container}>
         <Title />
-        <Socials />
+        <div className={styles.socials}>
+          <Socials size={36} />
+        </div>
       </div>
     </div>
   )

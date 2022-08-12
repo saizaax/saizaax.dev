@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC } from "react"
 import styles from "@styles/Socials.module.scss"
 
 import Image from "next/image"
@@ -12,7 +12,11 @@ import behance from "@assets/socials/behance.svg"
 import dribbble from "@assets/socials/dribbble.svg"
 import twitter from "@assets/socials/twitter.svg"
 
-const Socials = () => {
+type Props = {
+  size: number
+}
+
+const Socials: FC<Props> = ({ size }) => {
   const { theme } = useTheme()
 
   return (
@@ -20,7 +24,14 @@ const Socials = () => {
       {/* Telegram */}
       <Link href="https://github.com/xaazias">
         <span className={styles.link}>
-          <Image src={telegram} alt="telegram" priority={true} />
+          <Image
+            src={telegram}
+            alt="telegram"
+            priority={true}
+            layout="fixed"
+            width={size}
+            height={size}
+          />
         </span>
       </Link>
 
@@ -28,9 +39,23 @@ const Socials = () => {
       <Link href="https://github.com/xaazias">
         <span className={styles.link}>
           {theme === "dark" ? (
-            <Image src={githubDark} alt="github" priority={true} />
+            <Image
+              src={githubDark}
+              alt="github"
+              priority={true}
+              layout="fixed"
+              width={size}
+              height={size}
+            />
           ) : (
-            <Image src={githubLight} alt="github" priority={true} />
+            <Image
+              src={githubLight}
+              alt="github"
+              priority={true}
+              layout="fixed"
+              width={size}
+              height={size}
+            />
           )}
         </span>
       </Link>
@@ -38,21 +63,42 @@ const Socials = () => {
       {/* Behance */}
       <Link href="https://github.com/xaazias">
         <span className={styles.link}>
-          <Image src={behance} alt="behance" priority={true} />
+          <Image
+            src={behance}
+            alt="behance"
+            priority={true}
+            layout="fixed"
+            width={size}
+            height={size}
+          />
         </span>
       </Link>
 
       {/* Dribbble */}
       <Link href="https://github.com/xaazias">
         <span className={styles.link}>
-          <Image src={dribbble} alt="dribbble" priority={true} />
+          <Image
+            src={dribbble}
+            alt="dribbble"
+            priority={true}
+            layout="fixed"
+            width={size}
+            height={size}
+          />
         </span>
       </Link>
 
       {/* Twitter */}
       <Link href="https://github.com/xaazias">
         <span className={styles.link}>
-          <Image src={twitter} alt="twitter" priority={true} />
+          <Image
+            src={twitter}
+            alt="twitter"
+            priority={true}
+            layout="fixed"
+            width={size}
+            height={size}
+          />
         </span>
       </Link>
     </div>

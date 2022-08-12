@@ -3,7 +3,6 @@
   column-gap: 22.5px;
   align-items: center;
 
-
   .link {
     cursor: pointer;
     transition: 0.1s;
@@ -12,10 +11,5 @@
       transition: 0.1s;
       transform: scale(1.2);
     }
-  }
-
-  @media screen and (max-width: 590px) {
-    position: relative;
-    bottom: 35px;
   }
 }

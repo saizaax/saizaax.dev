@@ -26,6 +26,11 @@
       border-radius: 0;
       flex: 1;
       min-height: 640px;
+
+      .socials {
+        position: relative;
+        bottom: 35px;
+      }
     }
   }
 }

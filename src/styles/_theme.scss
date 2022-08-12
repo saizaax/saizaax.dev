@@ -71,6 +71,10 @@
   --stack-icon-background-color: rgba(77, 91, 124, 0.015);
 
   --project-card-description-color: rgba(3, 27, 78, 0.8);
+
+  /** Footer **/
+  --footer-border-color: rgba(3, 27, 78, 0.1);
+  --footer-text-color: rgba(77, 91, 124, 0.8);
 }
 
 [data-theme="dark"] {
@@ -145,5 +149,9 @@
   --stack-icon-border-color: #202329;
   --stack-icon-background-color: rgba(32, 35, 41, 0.15);
 
-  --project-card-description-color: #A1A0AB;
+  --project-card-description-color: #a1a0ab;
+
+  /** Footer **/
+  --footer-border-color: rgba(255, 255, 255, 0.1);
+  --footer-text-color: rgba(255, 255, 255, 0.5);
 }
