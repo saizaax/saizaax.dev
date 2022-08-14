@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import styles from "@styles/ProjectCard.module.scss"
 
 import { StaticImageData } from "next/image"
+import { motion, useAnimation, useInView } from "framer-motion"
 
 import { ProjectLogo } from "@components/ProjectLogo"
 import { ProjectStack } from "@components/ProjectStack"
@@ -25,6 +26,22 @@ type Props = {
   previewShadow?: boolean
 }
 
+const animations = {
+  hidden: {
+    y: 40,
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+      ease: [0.15, 0.55, 0.55, 1]
+    }
+  }
+}
+
 const ProjectCard: FC<Props> = ({
   name,
   description,
@@ -38,8 +55,25 @@ const ProjectCard: FC<Props> = ({
   type,
   previewShadow
 }) => {
+  const controls = useAnimation()
+  const ref = React.useRef(null)
+  const inView = useInView(ref, {
+    once: true,
+    margin: "0px 0px -100px 0px"
+  })
+
+  React.useEffect(() => {
+    if (inView) controls.start("visible")
+  }, [controls, inView])
+
   return (
-    <div className={`${styles.card} ${type ? styles.double : ""}`}>
+    <motion.div
+      className={`${styles.card} ${type ? styles.double : ""}`}
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={animations}
+    >
       <div className={styles.info}>
         {/* Light & Dark Logo */}
         <ProjectLogo logoDark={logoDark} logoLight={logoLight} />
@@ -59,7 +93,7 @@ const ProjectCard: FC<Props> = ({
 
       {/* Blur */}
       <ProjectBlur blur={blur} />
-    </div>
+    </motion.div>
   )
 }
 
