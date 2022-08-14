@@ -15,7 +15,7 @@ import { Menu } from "@components/Menu"
 import { Links } from "@components/Links"
 
 const Header = () => {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme: theme, setTheme } = useTheme()
 
   const [menuTop, setMenuTop] = React.useState(0)
   const [mounted, setMounted] = React.useState(false)

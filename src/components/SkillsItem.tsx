@@ -12,7 +12,7 @@ type Props = {
 }
 
 const SkillsItem: FC<Props> = ({ name, icon }) => {
-  const { theme } = useTheme()
+  const { resolvedTheme: theme } = useTheme()
 
   return (
     <div className={styles.container}>

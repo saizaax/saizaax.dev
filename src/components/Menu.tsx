@@ -15,7 +15,7 @@ type Props = {
 }
 
 const Menu: FC<Props> = ({ toggleMenu, menuTop }) => {
-  const { theme } = useTheme()
+  const { resolvedTheme: theme } = useTheme()
 
   return (
     <div className={styles.menu} style={{ top: menuTop }}>

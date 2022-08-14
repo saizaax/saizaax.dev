@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ProjectLogo: FC<Props> = ({ logoDark, logoLight }) => {
-  const { theme } = useTheme()
+  const { resolvedTheme: theme } = useTheme()
 
   return (
     <div>

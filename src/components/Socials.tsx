@@ -46,7 +46,7 @@ const animations = {
 }
 
 const Socials: FC<Props> = ({ size }) => {
-  const { theme } = useTheme()
+  const { resolvedTheme: theme } = useTheme()
 
   const [mounted, setMounted] = React.useState(false)
 

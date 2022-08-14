@@ -15,7 +15,7 @@ type Props = {
 }
 
 const ProjectLinks: FC<Props> = ({ url, github, name }) => {
-  const { theme } = useTheme()
+  const { resolvedTheme: theme } = useTheme()
 
   return (
     <div className={styles.buttons}>
