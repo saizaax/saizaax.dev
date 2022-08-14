@@ -1,12 +1,23 @@
 import React from "react"
 import styles from "@styles/Title.module.scss"
+
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 import memoji from "@assets/memoji.png"
 
+const animations = {
+  initial: { y: 20, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  transition: {
+    delay: 0.3,
+    duration: 0.3
+  }
+}
+
 const Title = () => {
   return (
-    <div className={styles.container}>
+    <motion.div className={styles.container} {...animations}>
       <p className={styles.name}>Korolkov Alexander</p>
       <div className={styles.title}>
         <h1>saizaax</h1>
@@ -22,7 +33,7 @@ const Title = () => {
           height={165}
         />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

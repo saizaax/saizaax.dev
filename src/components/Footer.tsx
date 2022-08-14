@@ -1,6 +1,7 @@
 import React, { FC } from "react"
 import styles from "@styles/Footer.module.scss"
-import { Socials } from "./Socials"
+
+import { Socials } from "@components/Socials"
 
 const Footer: FC = () => {
   return (

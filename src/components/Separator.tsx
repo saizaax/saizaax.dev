@@ -21,7 +21,7 @@ const Separator = () => {
     return h.onChange((latest) => {
       setProgress(latest)
     })
-  }, [])
+  }, [h])
 
   return (
     <div className={styles.separator}>

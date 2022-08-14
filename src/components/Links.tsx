@@ -24,7 +24,7 @@ const animations = {
       transition: {
         duration: 0.2
       }
-    },
+    }
   }
 }
 
@@ -38,19 +38,45 @@ const Links: FC<Props> = ({ toggleMenu }) => {
       variants={animations.container}
     >
       <Link href="#intro">
-        <motion.a onClick={toggleMenu} variants={animations.item}>Socials</motion.a>
+        <motion.a href="#intro" onClick={toggleMenu} variants={animations.item}>
+          Socials
+        </motion.a>
       </Link>
       <Link href="#biography">
-        <motion.a onClick={toggleMenu} variants={animations.item}>Biography</motion.a>
+        <motion.a
+          href="#biography"
+          onClick={toggleMenu}
+          variants={animations.item}
+        >
+          Biography
+        </motion.a>
       </Link>
       <Link href="#projects">
-        <motion.a onClick={toggleMenu} variants={animations.item}>Projects</motion.a>
+        <motion.a
+          href="#projects"
+          onClick={toggleMenu}
+          variants={animations.item}
+        >
+          Projects
+        </motion.a>
       </Link>
       <Link href="#skills">
-        <motion.a onClick={toggleMenu} variants={animations.item}>Skills</motion.a>
+        <motion.a
+          href="#skills"
+          onClick={toggleMenu}
+          variants={animations.item}
+        >
+          Skills
+        </motion.a>
       </Link>
       <Link href="#contacts">
-        <motion.a onClick={toggleMenu} variants={animations.item}>Contacts</motion.a>
+        <motion.a
+          href="#contacts"
+          onClick={toggleMenu}
+          variants={animations.item}
+        >
+          Contacts
+        </motion.a>
       </Link>
     </motion.div>
   )

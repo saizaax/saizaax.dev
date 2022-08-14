@@ -10,8 +10,6 @@ import telegram from "@assets/socials/telegram.svg"
 import githubDark from "@assets/socials/github.svg"
 import githubLight from "@assets/socials/github-light.svg"
 import behance from "@assets/socials/behance.svg"
-import dribbble from "@assets/socials/dribbble.svg"
-import twitter from "@assets/socials/twitter.svg"
 
 type Props = {
   size: number
@@ -50,6 +48,11 @@ const animations = {
 const Socials: FC<Props> = ({ size }) => {
   const { theme } = useTheme()
 
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => setMounted(true), [])
+  if (!mounted) return null
+
   return (
     <motion.div
       className={styles.socials}
@@ -59,7 +62,7 @@ const Socials: FC<Props> = ({ size }) => {
       variants={animations.container}
     >
       {/* Telegram */}
-      <Link href="https://github.com/xaazias">
+      <Link href="https://t.me/saizaax">
         <motion.span
           className={styles.link}
           variants={animations.item}
@@ -106,7 +109,7 @@ const Socials: FC<Props> = ({ size }) => {
       </Link>
 
       {/* Behance */}
-      <Link href="https://github.com/xaazias">
+      <Link href="https://behance.net/saizaax">
         <motion.span
           className={styles.link}
           variants={animations.item}
@@ -115,42 +118,6 @@ const Socials: FC<Props> = ({ size }) => {
           <Image
             src={behance}
             alt="behance"
-            priority={true}
-            layout="fixed"
-            width={size}
-            height={size}
-          />
-        </motion.span>
-      </Link>
-
-      {/* Dribbble */}
-      <Link href="https://github.com/xaazias">
-        <motion.span
-          className={styles.link}
-          variants={animations.item}
-          whileHover={animations.item.hover}
-        >
-          <Image
-            src={dribbble}
-            alt="dribbble"
-            priority={true}
-            layout="fixed"
-            width={size}
-            height={size}
-          />
-        </motion.span>
-      </Link>
-
-      {/* Twitter */}
-      <Link href="https://github.com/xaazias">
-        <motion.span
-          className={styles.link}
-          variants={animations.item}
-          whileHover={animations.item.hover}
-        >
-          <Image
-            src={twitter}
-            alt="twitter"
             priority={true}
             layout="fixed"
             width={size}

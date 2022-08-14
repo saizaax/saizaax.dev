@@ -5,7 +5,6 @@ import styles from "@styles/Home.module.scss"
 
 import { Header } from "@components/Header"
 import { Intro } from "@blocks/Intro"
-import { Loader } from "@components/blocks/Loader"
 import { Separator } from "@components/Separator"
 import { Biography } from "@components/blocks/Biography"
 import { Projects } from "@components/blocks/Projects"
@@ -14,11 +13,6 @@ import { Contacts } from "@components/blocks/Contacts"
 import { Footer } from "@components/Footer"
 
 const Home: NextPage = () => {
-  const [mounted, setMounted] = React.useState(false)
-
-  React.useEffect(() => setMounted(true), [])
-  if (!mounted) return <Loader />
-
   return (
     <div className={styles.container}>
       <Head>

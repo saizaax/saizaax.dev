@@ -136,7 +136,7 @@ const HardSkills = () => {
         <div className={styles.row}>
           {/* Design */}
           <SkillsGroup
-            title="Other"
+            title="Design"
             technologies={[
               { name: "Figma", icon: [figma, figma] },
               { name: "Photoshop", icon: [photoshop, photoshop] }
