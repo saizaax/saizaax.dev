@@ -17,7 +17,13 @@ const ContactLink: FC<Props> = ({ icon, title, value, url }) => {
       <a className={styles.link}>
         <div className={styles.contact}>
           <div className={styles.icon}>
-            <Image src={icon} alt={title} width={24} height={24} />
+            <Image
+              src={icon}
+              alt={title}
+              layout="fixed"
+              width={24}
+              height={24}
+            />
           </div>
           <div className={styles.info}>
             <p className={styles.title}>{title}</p>

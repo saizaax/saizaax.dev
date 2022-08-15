@@ -49,7 +49,6 @@ const Header = () => {
               <Image
                 src={memoji}
                 alt="saizaax.dev"
-                priority={true}
                 width={50}
                 height={50}
                 layout="fixed"
@@ -70,7 +69,6 @@ const Header = () => {
               alt="theme-toggle"
               width={24}
               height={24}
-              priority={true}
               layout="fixed"
             />
           </button>
@@ -81,7 +79,6 @@ const Header = () => {
               alt="theme-toggle"
               width={24}
               height={24}
-              priority={true}
               layout="fixed"
             />
           </button>
@@ -93,7 +90,6 @@ const Header = () => {
               alt="menu"
               width={24}
               height={24}
-              priority={true}
               layout="fixed"
             />
           ) : (
@@ -102,7 +98,6 @@ const Header = () => {
               alt="menu"
               width={24}
               height={24}
-              priority={true}
               layout="fixed"
             />
           )}

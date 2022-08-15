@@ -34,10 +34,10 @@ const Abstractions = () => {
   return (
     <Fragment>
       <motion.div className={styles.neon} {...animations.neon}>
-        <Image src={neon} alt="" priority={true} width={432} height={596} />
+        <Image src={neon} alt="" layout="fixed" width={432} height={596} />
       </motion.div>
       <motion.div className={styles.bright} {...animations.bright}>
-        <Image src={bright} alt="" priority={true} width={412} height={543} />
+        <Image src={bright} alt="" layout="fixed" width={412} height={543} />
       </motion.div>
     </Fragment>
   )

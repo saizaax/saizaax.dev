@@ -29,6 +29,7 @@ const Title = () => {
           src={memoji}
           alt="saizaax"
           priority={true}
+          layout="fixed"
           width={165}
           height={165}
         />

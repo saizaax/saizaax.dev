@@ -15,8 +15,12 @@ type Props = {
 }
 
 const LinkButton: FC<Props> = ({ children, icon, style, arrow, url }) => {
-  const Icon = icon ? <Image src={icon} alt="icon" /> : null
-  const Arrow = arrow ? <Image src={arrowIcon} alt="arrow" /> : null
+  const Icon = icon ? (
+    <Image src={icon} alt="icon" layout="fixed" width={19} height={19} />
+  ) : null
+  const Arrow = arrow ? (
+    <Image src={arrowIcon} alt="arrow" layout="fixed" width={15} height={15} />
+  ) : null
 
   return (
     <Link href={url}>

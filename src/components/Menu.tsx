@@ -27,7 +27,6 @@ const Menu: FC<Props> = ({ toggleMenu, menuTop }) => {
               alt="close"
               width={24}
               height={24}
-              priority={true}
               layout="fixed"
             />
           ) : (
@@ -36,14 +35,13 @@ const Menu: FC<Props> = ({ toggleMenu, menuTop }) => {
               alt="close"
               width={24}
               height={24}
-              priority={true}
               layout="fixed"
             />
           )}
         </button>
       </div>
       <div className={styles.links}>
-        <Links toggleMenu={() => toggleMenu(false)}  />
+        <Links toggleMenu={() => toggleMenu(false)} />
       </div>
     </div>
   )

@@ -71,7 +71,6 @@ const Socials: FC<Props> = ({ size }) => {
           <Image
             src={telegram}
             alt="telegram"
-            priority={true}
             layout="fixed"
             width={size}
             height={size}
@@ -90,7 +89,6 @@ const Socials: FC<Props> = ({ size }) => {
             <Image
               src={githubDark}
               alt="github"
-              priority={true}
               layout="fixed"
               width={size}
               height={size}
@@ -99,7 +97,6 @@ const Socials: FC<Props> = ({ size }) => {
             <Image
               src={githubLight}
               alt="github"
-              priority={true}
               layout="fixed"
               width={size}
               height={size}
@@ -118,7 +115,6 @@ const Socials: FC<Props> = ({ size }) => {
           <Image
             src={behance}
             alt="behance"
-            priority={true}
             layout="fixed"
             width={size}
             height={size}
