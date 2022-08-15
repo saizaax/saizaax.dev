@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  saizaaxdev:
+    build: ./
+    container_name: next-saizaax-dev
+    restart: always
+    ports:
+      - 80:3000
