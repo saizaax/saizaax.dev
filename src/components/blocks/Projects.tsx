@@ -61,7 +61,7 @@ const Projects = () => {
             [js, js],
             [react, react],
             [spring, spring],
-            [postgresql, postgresql]
+            [postgresql, postgresql],
           ]}
           preview={uncosPreview}
           blur={uncosBlur}
@@ -81,7 +81,7 @@ const Projects = () => {
               [nextDark, nextLight],
               [react, react],
               [redux, redux],
-              [prismaDark, prismaLight]
+              [prismaDark, prismaLight],
             ]}
             preview={pizzaPreview}
             blur={pizzaBlur}
@@ -100,7 +100,7 @@ const Projects = () => {
               [ts, ts],
               [react, react],
               [nest, nest],
-              [mongodb, mongodb]
+              [mongodb, mongodb],
             ]}
             preview={xanityPreview}
             blur={xanityBlur}
@@ -117,7 +117,7 @@ const Projects = () => {
           github="https://github.com/xaazias/studify-app"
           stack={[
             [ts, ts],
-            [nativeDark, nativeLight]
+            [nativeDark, nativeLight],
           ]}
           preview={studifyPreview}
           blur={studifyBlur}

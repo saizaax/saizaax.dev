@@ -13,19 +13,19 @@ const animations = {
     visible: {
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.05
-      }
-    }
+        staggerChildren: 0.05,
+      },
+    },
   },
   item: {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.2
-      }
-    }
-  }
+        duration: 0.2,
+      },
+    },
+  },
 }
 
 const Links: FC<Props> = ({ toggleMenu }) => {

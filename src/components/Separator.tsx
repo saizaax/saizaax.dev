@@ -8,13 +8,13 @@ const Separator = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "start start"]
+    offset: ["end end", "start start"],
   })
 
   const h = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   })
 
   React.useEffect(() => {

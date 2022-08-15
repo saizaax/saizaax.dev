@@ -21,9 +21,9 @@ const animations = {
     visible: {
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.05
-      }
-    }
+        staggerChildren: 0.05,
+      },
+    },
   },
   item: {
     hidden: { opacity: 0, y: 25 },
@@ -33,16 +33,16 @@ const animations = {
       transition: {
         type: "spring",
         stiffness: 300,
-        damping: 15
-      }
+        damping: 15,
+      },
     },
     hover: {
       scale: 1.2,
       transition: {
-        duration: 0.01
-      }
-    }
-  }
+        duration: 0.01,
+      },
+    },
+  },
 }
 
 const Socials: FC<Props> = ({ size }) => {

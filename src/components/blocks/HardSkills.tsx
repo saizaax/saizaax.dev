@@ -45,7 +45,7 @@ const HardSkills = () => {
             technologies={[
               { name: "JavaScript", icon: [js, js] },
               { name: "TypeScript", icon: [ts, ts] },
-              { name: "Node.js", icon: [nodejs, nodejs] }
+              { name: "Node.js", icon: [nodejs, nodejs] },
             ]}
           />
         </div>
@@ -60,7 +60,7 @@ const HardSkills = () => {
             technologies={[
               { name: "React.js", icon: [react, react] },
               { name: "React Native", icon: [nativeDark, nativeLight] },
-              { name: "Next.js", icon: [nextDark, nextLight] }
+              { name: "Next.js", icon: [nextDark, nextLight] },
             ]}
           />
 
@@ -71,7 +71,7 @@ const HardSkills = () => {
               { name: "Redux", icon: [redux, redux] },
               { name: "SCSS", icon: [sass, sass] },
               { name: "Framer Motion", icon: [motion, motion] },
-              { name: "Styled", icon: [styled, styled] }
+              { name: "Styled", icon: [styled, styled] },
             ]}
           />
         </div>
@@ -85,7 +85,7 @@ const HardSkills = () => {
             title="Backend"
             technologies={[
               { name: "Nest.js", icon: [nest, nest] },
-              { name: "Express.js", icon: [expressDark, expressLight] }
+              { name: "Express.js", icon: [expressDark, expressLight] },
             ]}
           />
 
@@ -94,7 +94,7 @@ const HardSkills = () => {
             title="Databases"
             technologies={[
               { name: "PostgreSQL", icon: [postgresql, postgresql] },
-              { name: "MongoDB", icon: [mongodb, mongodb] }
+              { name: "MongoDB", icon: [mongodb, mongodb] },
             ]}
           />
 
@@ -114,7 +114,7 @@ const HardSkills = () => {
             title="Other"
             technologies={[
               { name: "Git", icon: [git, git] },
-              { name: "Bash", icon: [bash, bash] }
+              { name: "Bash", icon: [bash, bash] },
             ]}
           />
 
@@ -125,7 +125,7 @@ const HardSkills = () => {
               { name: "Docker", icon: [docker, docker] },
               { name: "Traefik", icon: [traefik, traefik] },
               { name: "GitLab CI/CD", icon: [gitlab, gitlab] },
-              { name: "GitHub Actions", icon: [actions, actions] }
+              { name: "GitHub Actions", icon: [actions, actions] },
             ]}
           />
         </div>
@@ -139,7 +139,7 @@ const HardSkills = () => {
             title="Design"
             technologies={[
               { name: "Figma", icon: [figma, figma] },
-              { name: "Photoshop", icon: [photoshop, photoshop] }
+              { name: "Photoshop", icon: [photoshop, photoshop] },
             ]}
           />
         </div>

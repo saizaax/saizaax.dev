@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier prettier --write ./src"
+    "format": "prettier --write ./src"
   },
   "dependencies": {
     "framer-motion": "^7.1.0",

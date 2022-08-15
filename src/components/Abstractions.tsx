@@ -15,8 +15,8 @@ const animations = {
       type: "spring",
       stiffness: 260,
       damping: 20,
-      delay: 0.3
-    }
+      delay: 0.3,
+    },
   },
   bright: {
     initial: { x: -375 },
@@ -25,9 +25,9 @@ const animations = {
       type: "spring",
       stiffness: 260,
       damping: 20,
-      delay: 0.15
-    }
-  }
+      delay: 0.15,
+    },
+  },
 }
 
 const Abstractions = () => {

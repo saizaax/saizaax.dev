@@ -15,7 +15,7 @@ type Props = {
 const animations = {
   hidden: {
     y: 40,
-    opacity: 0
+    opacity: 0,
   },
   visible: {
     opacity: 1,
@@ -23,9 +23,9 @@ const animations = {
     transition: {
       delay: 0.2,
       duration: 0.6,
-      ease: [0.15, 0.55, 0.55, 1]
-    }
-  }
+      ease: [0.15, 0.55, 0.55, 1],
+    },
+  },
 }
 
 const SkillsGroup: FC<Props> = ({ title, technologies }) => {
@@ -33,7 +33,7 @@ const SkillsGroup: FC<Props> = ({ title, technologies }) => {
   const ref = React.useRef(null)
   const inView = useInView(ref, {
     once: true,
-    margin: "0px 0px -100px 0px"
+    margin: "0px 0px -100px 0px",
   })
 
   React.useEffect(() => {
