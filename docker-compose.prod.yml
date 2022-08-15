@@ -9,6 +9,7 @@ networks:
 services:
   saizaaxdev:
     image: ghcr.io/xaazias/next-saizaax-dev
+    container_name: next-saizaax-dev
     restart: always
     ports:
       - 83:3000
