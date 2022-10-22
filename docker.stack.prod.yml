@@ -1,0 +1,23 @@
+version: "3.9"
+
+networks:
+  traefik-gateway:
+    external: true
+
+services:
+  saizaaxdev:
+    image: ghcr.io/saizaax/next-saizaax-dev
+    restart: always
+    ports:
+      - 81:3000
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.port=80"
+        - 'traefik.http.routers.saizaaxdev.rule=Host(`example.com`)'
+        - "traefik.http.routers.saizaaxdev.entrypoints=websecure"
+        - "traefik.http.routers.saizaaxdev.tls.certresolver=letsencrypt"
+        - "traefik.http.routers.saizaaxdev.tls=true"
+        - "traefik.http.services.saizaaxdev.loadbalancer.server.port=3000"
+    networks:
+      - traefik-gateway
