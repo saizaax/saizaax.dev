@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ghcr.io/xaazias/next-saizaax-dev
+  IMAGE_NAME: ghcr.io/saizaax/next-saizaax-dev
   STACK_NAME: saizaax-dev
   GH_PAT: ${{ secrets.GH_PAT }}
   GH_USER: ${{ github.actor }}
