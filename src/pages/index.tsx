@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>saizaax.dev</title>
+        <title>SAIZAAX.DEV</title>
         <meta name="description" content="Personal Website — Portfolio 😎" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
