@@ -79,7 +79,7 @@ const Socials: FC<Props> = ({ size }) => {
       </Link>
 
       {/* GitHub */}
-      <Link href="https://github.com/xaazias">
+      <Link href="https://github.com/saizaax">
         <motion.span
           className={styles.link}
           variants={animations.item}

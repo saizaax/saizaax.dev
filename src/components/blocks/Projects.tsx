@@ -22,6 +22,12 @@ import xanityLogoLight from "@assets/projects/xanity-logo-light.svg"
 import xanityPreview from "@assets/projects/xanity-preview.png"
 import xanityBlur from "@assets/projects/xanity-blur.png"
 
+/** Yet Another Schedule App **/
+import scheduleLogoDark from "@assets/projects/schedule-logo-dark.svg"
+import scheduleLogoLight from "@assets/projects/schedule-logo-light.svg"
+import schedulePreview from "@assets/projects/schedule-preview.png"
+import scheduleBlur from "@assets/projects/schedule-blur.png"
+
 /** Studify **/
 import studifyLogoDark from "@assets/projects/studify-logo-dark.svg"
 import studifyLogoLight from "@assets/projects/studify-logo-light.svg"
@@ -43,6 +49,8 @@ import nest from "@assets/technologies/nest.svg"
 import mongodb from "@assets/technologies/mongodb.svg"
 import nativeLight from "@assets/technologies/native-light.svg"
 import nativeDark from "@assets/technologies/native-dark.svg"
+import expressDark from "@assets/technologies/express-dark.svg"
+import expressLight from "@assets/technologies/express-light.svg"
 
 const Projects = () => {
   return (
@@ -55,8 +63,8 @@ const Projects = () => {
           description="News Agency Website with admin dashboard. Made with React.js, Java Spring and PostgreSQL."
           logoDark={uncosLogoDark}
           logoLight={uncosLogoLight}
-          url="https://uncos.saizaax.ru"
-          github="https://github.com/xaazias/uncos"
+          url="https://uncos.saizaax.xyz"
+          github="https://github.com/saizaax/uncos"
           stack={[
             [js, js],
             [react, react],
@@ -74,8 +82,8 @@ const Projects = () => {
             description="Next Pizza Website. Made with Next.js, Redux, TypeScript, Prisma and PlanetScale."
             logoDark={pizzaLogoDark}
             logoLight={pizzaLogoLight}
-            url="https://pizza.saizaax.ru"
-            github="https://github.com/xaazias/next-pizza"
+            url="https://pizza.saizaax.xyz"
+            github="https://github.com/saizaax/next-pizza"
             stack={[
               [ts, ts],
               [nextDark, nextLight],
@@ -94,8 +102,8 @@ const Projects = () => {
             description="Xanity — Hardware Store Website. Made with React.js, TypeScript, Nest.js, MongoDB."
             logoDark={xanityLogoDark}
             logoLight={xanityLogoLight}
-            url="https://xanity.saizaax.ru"
-            github="https://github.com/xaazias/xanity"
+            url="https://xanity.saizaax.xyz"
+            github="https://github.com/saizaax/xanity"
             stack={[
               [ts, ts],
               [react, react],
@@ -108,13 +116,34 @@ const Projects = () => {
           />
         </div>
 
+        {/* Yet Another Schedule App */}
+        <ProjectCard
+          name="schedule"
+          description="Yet Another Schedule App — web schedule application for RTU MIREA university. Made with React.js, Express and PostgreSQL."
+          logoDark={scheduleLogoDark}
+          logoLight={scheduleLogoLight}
+          url="https://schedule.saizaax.xyz"
+          github="https://github.com/saizaax/yet-another-schedule-app"
+          stack={[
+            [ts, ts],
+            [react, react],
+            [expressDark, expressLight],
+            [prismaDark, prismaLight],
+            [postgresql, postgresql],
+          ]}
+
+          preview={schedulePreview}
+          blur={scheduleBlur}
+          previewShadow={true}
+        />
+
         {/* Studify */}
         <ProjectCard
           name="studify"
-          description="Studify — schedule application for RTU MIREA university. Made with React Native and TypeScript."
+          description="Schedule Native — mobile schedule-app for RTU MIREA university. Made with React Native and TypeScript."
           logoDark={studifyLogoDark}
           logoLight={studifyLogoLight}
-          github="https://github.com/xaazias/studify-app"
+          github="https://github.com/saizaax/schedule-native"
           stack={[
             [ts, ts],
             [nativeDark, nativeLight],
