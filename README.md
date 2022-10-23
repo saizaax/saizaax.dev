@@ -1,6 +1,6 @@
 # SAIZAAX.DEV — Personal Portfolio Website ⚡
 
-[![saizaax.ru](https://img.shields.io/website?down_message=offline&label=saizaax.ru&up_message=online&url=https%3A%2F%2Fsaizaax.ru%2F)](https://saizaax.ru/)
+[![saizaax.xyz](https://img.shields.io/website?down_message=offline&label=saizaax.xyz&up_message=online&url=https%3A%2F%2Fsaizaax.xyz%2F)](https://saizaax.xyz/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3077C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![ReactJS](https://img.shields.io/badge/React.js-282C34?logo=react&logoColor=white)](https://reactjs.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs)](https://nextjs.org/)
@@ -11,7 +11,7 @@
 ![](preview.png)
 
 <h3 align="center">
-✨ Preview • <a href="https://saizaax.ru/">SAIZAAX.RU</a>
+✨ Preview • <a href="https://saizaax.xyz/">saizaax.xyz</a>
 </h3>
 
 ## Technologies
@@ -25,4 +25,4 @@
 
 ## Contacts
 
-2022 • Korolkov Alexander • [@saizaax](https://t.me/saizaax) • saizaax.off@gmail.com
+2022 • Korolkov Alexander • [@saizaax](https://t.me/saizaax) • [saizaax.off@gmail.com](mailto:saizaax.off@gmail.com)
