@@ -10,6 +10,7 @@ import telegram from "@assets/socials/telegram.svg"
 import githubDark from "@assets/socials/github.svg"
 import githubLight from "@assets/socials/github-light.svg"
 import behance from "@assets/socials/behance.svg"
+import dribbble from "@assets/socials/dribbble.svg"
 
 type Props = {
   size: number
@@ -102,6 +103,23 @@ const Socials: FC<Props> = ({ size }) => {
               height={size}
             />
           )}
+        </motion.span>
+      </Link>
+
+      {/* Dribbble */}
+      <Link href="https://dribbble.com/saizaax">
+        <motion.span
+          className={styles.link}
+          variants={animations.item}
+          whileHover={animations.item.hover}
+        >
+          <Image
+            src={dribbble}
+            alt="dribbble"
+            layout="fixed"
+            width={size}
+            height={size}
+          />
         </motion.span>
       </Link>
 
