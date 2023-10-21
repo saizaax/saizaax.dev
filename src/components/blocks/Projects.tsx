@@ -10,18 +10,6 @@ import uncosLogoLight from "@assets/projects/uncos-logo-light.svg"
 import uncosPreview from "@assets/projects/uncos-preview.png"
 import uncosBlur from "@assets/projects/uncos-blur.png"
 
-/** Pizza **/
-import pizzaLogoDark from "@assets/projects/pizza-logo-dark.svg"
-import pizzaLogoLight from "@assets/projects/pizza-logo-light.svg"
-import pizzaPreview from "@assets/projects/pizza-preview.png"
-import pizzaBlur from "@assets/projects/pizza-blur.png"
-
-/** Xanity **/
-import xanityLogoDark from "@assets/projects/xanity-logo-dark.svg"
-import xanityLogoLight from "@assets/projects/xanity-logo-light.svg"
-import xanityPreview from "@assets/projects/xanity-preview.png"
-import xanityBlur from "@assets/projects/xanity-blur.png"
-
 /** Yet Another Schedule App **/
 import scheduleLogoDark from "@assets/projects/schedule-logo-dark.svg"
 import scheduleLogoLight from "@assets/projects/schedule-logo-light.svg"
@@ -61,7 +49,7 @@ import expressLight from "@assets/technologies/express-light.svg"
 const Projects = () => {
   return (
     <div className={styles.projects} id="projects">
-      <Heading title="My Projects" subtitle="Made with ❤️ and passion" />
+      <Heading title="My Study Projects" subtitle="Made with ❤️ and passion" />
       <div className={styles.container}>
         {/* Uncos */}
         <ProjectCard
@@ -80,47 +68,6 @@ const Projects = () => {
           preview={uncosPreview}
           blur={uncosBlur}
         />
-
-        <div className={styles.double}>
-          {/* Next Pizza */}
-          <ProjectCard
-            name="pizza"
-            description="Next Pizza Website. Made with Next.js, Redux, TypeScript, Prisma and PlanetScale."
-            logoDark={pizzaLogoDark}
-            logoLight={pizzaLogoLight}
-            url="https://pizza.saizaax.dev"
-            github="https://github.com/saizaax/next-pizza"
-            stack={[
-              [ts, ts],
-              [nextDark, nextLight],
-              [react, react],
-              [redux, redux],
-              [prismaDark, prismaLight],
-            ]}
-            preview={pizzaPreview}
-            blur={pizzaBlur}
-            type="double"
-          />
-
-          {/* Xanity */}
-          <ProjectCard
-            name="xanity"
-            description="Xanity — Hardware Store Website. Made with React.js, TypeScript, Nest.js, MongoDB."
-            logoDark={xanityLogoDark}
-            logoLight={xanityLogoLight}
-            url="https://xanity.saizaax.dev"
-            github="https://github.com/saizaax/xanity"
-            stack={[
-              [ts, ts],
-              [react, react],
-              [nest, nest],
-              [mongodb, mongodb],
-            ]}
-            preview={xanityPreview}
-            blur={xanityBlur}
-            type="double"
-          />
-        </div>
 
         {/* DocStorage */}
         <ProjectCard

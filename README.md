@@ -25,4 +25,4 @@
 
 ## Contacts
 
-2022 • Korolkov Alexander • [@saizaax](https://t.me/saizaax) • [saizaax.off@gmail.com](mailto:saizaax.off@gmail.com)
+2025 • Korolkov Alexander • [@saizaax](https://t.me/saizaax) • [contact@saizaax.dev](mailto:contact@saizaax.dev)

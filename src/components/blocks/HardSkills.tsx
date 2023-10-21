@@ -16,22 +16,29 @@ import prismaLight from "@assets/technologies/prisma-light.svg"
 import prismaDark from "@assets/technologies/prisma-dark.svg"
 import nest from "@assets/technologies/nest.svg"
 import mongodb from "@assets/technologies/mongodb.svg"
-import nativeLight from "@assets/technologies/native-light.svg"
-import nativeDark from "@assets/technologies/native-dark.svg"
 import nodejs from "@assets/technologies/nodejs.svg"
 import sass from "@assets/technologies/sass.svg"
 import motion from "@assets/technologies/motion.svg"
 import styled from "@assets/technologies/styled.svg"
 import git from "@assets/technologies/git.svg"
 import actions from "@assets/technologies/actions.svg"
-import photoshop from "@assets/technologies/photoshop.svg"
 import expressDark from "@assets/technologies/express-dark.svg"
 import expressLight from "@assets/technologies/express-light.svg"
 import bash from "@assets/technologies/bash.svg"
 import docker from "@assets/technologies/docker.svg"
 import traefik from "@assets/technologies/traefik.svg"
 import gitlab from "@assets/technologies/gitlab.svg"
-import figma from "@assets/technologies/figma.svg"
+import tailwind from "@assets/technologies/tailwind.svg"
+import reactQuery from "@assets/technologies/react-query.svg"
+import zustand from "@assets/technologies/zustand.svg"
+import jotai from "@assets/technologies/jotai.svg"
+import i18next from "@assets/technologies/i18next.svg"
+import reactHookForm from "@assets/technologies/react-hook-form.svg"
+import jest from "@assets/technologies/jest.svg"
+import go from "@assets/technologies/go.svg"
+import drizzle from "@assets/technologies/drizzle.svg"
+import fiber from "@assets/technologies/fiber.svg"
+import playwright from "@assets/technologies/playwright.svg"
 
 const HardSkills = () => {
   return (
@@ -46,6 +53,7 @@ const HardSkills = () => {
               { name: "JavaScript", icon: [js, js] },
               { name: "TypeScript", icon: [ts, ts] },
               { name: "Node.js", icon: [nodejs, nodejs] },
+              { name: "Go", icon: [go, go] },
             ]}
           />
         </div>
@@ -59,7 +67,6 @@ const HardSkills = () => {
             title="Frontend"
             technologies={[
               { name: "React.js", icon: [react, react] },
-              { name: "React Native", icon: [nativeDark, nativeLight] },
               { name: "Next.js", icon: [nextDark, nextLight] },
             ]}
           />
@@ -68,10 +75,26 @@ const HardSkills = () => {
           <SkillsGroup
             title="Libraries"
             technologies={[
-              { name: "Redux", icon: [redux, redux] },
+              { name: "Tailwind CSS", icon: [tailwind, tailwind] },
               { name: "SCSS", icon: [sass, sass] },
-              { name: "Framer Motion", icon: [motion, motion] },
               { name: "Styled", icon: [styled, styled] },
+              { name: "Framer Motion", icon: [motion, motion] },
+              { name: "Playwright", icon: [playwright, playwright] },
+            ]}
+          />
+        </div>
+
+        <div className={styles.row}>
+          {/* Frontend */}
+          <SkillsGroup
+            technologies={[
+              { name: "Redux", icon: [redux, redux] },
+              { name: "React-Query", icon: [reactQuery, reactQuery] },
+              { name: "Zustand", icon: [zustand, zustand] },
+              { name: "Jotai", icon: [jotai, jotai] },
+              { name: "i18next", icon: [i18next, i18next] },
+              { name: "React Hook Form", icon: [reactHookForm, reactHookForm] },
+              { name: "Jest", icon: [jest, jest] },
             ]}
           />
         </div>
@@ -86,6 +109,7 @@ const HardSkills = () => {
             technologies={[
               { name: "Nest.js", icon: [nest, nest] },
               { name: "Express.js", icon: [expressDark, expressLight] },
+              { name: "Fiber", icon: [fiber, fiber] },
             ]}
           />
 
@@ -101,7 +125,10 @@ const HardSkills = () => {
           {/* ORM */}
           <SkillsGroup
             title="ORM"
-            technologies={[{ name: "Prisma", icon: [prismaDark, prismaLight] }]}
+            technologies={[
+              { name: "Prisma", icon: [prismaDark, prismaLight] },
+              { name: "Drizzle", icon: [drizzle, drizzle] },
+            ]}
           />
         </div>
 
@@ -126,20 +153,6 @@ const HardSkills = () => {
               { name: "Traefik", icon: [traefik, traefik] },
               { name: "GitLab CI/CD", icon: [gitlab, gitlab] },
               { name: "GitHub Actions", icon: [actions, actions] },
-            ]}
-          />
-        </div>
-
-        <hr />
-
-        {/* Design */}
-        <div className={styles.row}>
-          {/* Design */}
-          <SkillsGroup
-            title="Design"
-            technologies={[
-              { name: "Figma", icon: [figma, figma] },
-              { name: "Photoshop", icon: [photoshop, photoshop] },
             ]}
           />
         </div>
