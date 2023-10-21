@@ -21,8 +21,8 @@ const Contacts: FC = () => {
         <ContactLink
           icon={email}
           title="Email"
-          value="saizaax.off@gmail.com"
-          url="mailto:saizaax.off@gmail.com"
+          value="contact@saizaax.dev"
+          url="mailto:contact@saizaax.dev"
         />
       </div>
     </div>

@@ -8,7 +8,7 @@ import { SkillsItem } from "@components/SkillsItem"
 import { Technology } from "@custom-types/Technology.type"
 
 type Props = {
-  title: string
+  title?: string
   technologies: Technology[]
 }
 
@@ -48,7 +48,7 @@ const SkillsGroup: FC<Props> = ({ title, technologies }) => {
       animate={controls}
       variants={animations}
     >
-      <p className={styles.title}>{title}</p>
+      {title && <p className={styles.title}>{title}</p>}
       <div className={styles.container}>
         {technologies.map((item, index) => (
           <SkillsItem name={item.name} icon={item.icon} key={index} />

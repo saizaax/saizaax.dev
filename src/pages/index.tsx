@@ -17,29 +17,18 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>SAIZAAX.DEV</title>
-        <meta name="description" content="Personal Website — Portfolio 😎" />
-        {/* Favicon */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="Korolkov Alexander — Frontend Developer" />
+        {/* OpenGraph */}
+        <meta property="og:title" content="SAIZAAX.DEV" />
+        <meta property="og:description" content="Korolkov Alexander — Frontend Developer" />
+        <meta property="og:image" content="/assets/og.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://saizaax.dev" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SAIZAAX.DEV" />
+        <meta name="twitter:description" content="Korolkov Alexander — Frontend Developer" />
+        <meta name="twitter:image" content="/assets/og.jpg" />
       </Head>
       <Header />
       <main className={styles.main}>
