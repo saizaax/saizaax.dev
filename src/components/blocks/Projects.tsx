@@ -34,6 +34,12 @@ import studifyLogoLight from "@assets/projects/studify-logo-light.svg"
 import studifyPreview from "@assets/projects/studify-preview.png"
 import studifyBlur from "@assets/projects/studify-blur.png"
 
+/** DocStorage */
+import docstorageLogoDark from "@assets/projects/docstorage-logo-dark.svg"
+import docstorageLogoLight from "@assets/projects/docstorage-logo-light.svg"
+import docstoragePreview from "@assets/projects/docstorage-preview.png"
+import docstorageBlur from "@assets/projects/docstorage-blur.png"
+
 /** Technologies **/
 import js from "@assets/technologies/js.svg"
 import react from "@assets/technologies/react.svg"
@@ -116,6 +122,26 @@ const Projects = () => {
           />
         </div>
 
+        {/* DocStorage */}
+        <ProjectCard
+          name="docstorage"
+          description="DocStorage — cloud service for uploading, editing and translating text documents."
+          logoDark={docstorageLogoDark}
+          logoLight={docstorageLogoLight}
+          url="https://docstorage.saizaax.dev"
+          github="https://github.com/saizaax/doc-storage"
+          stack={[
+            [ts, ts],
+            [react, react],
+            [expressDark, expressLight],
+            [prismaDark, prismaLight],
+            [postgresql, postgresql],
+          ]}
+          preview={docstoragePreview}
+          blur={docstorageBlur}
+          previewShadow={true}
+        />
+
         {/* Yet Another Schedule App */}
         <ProjectCard
           name="schedule"
@@ -131,7 +157,6 @@ const Projects = () => {
             [prismaDark, prismaLight],
             [postgresql, postgresql],
           ]}
-
           preview={schedulePreview}
           blur={scheduleBlur}
           previewShadow={true}
