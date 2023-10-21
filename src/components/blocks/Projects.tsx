@@ -63,7 +63,7 @@ const Projects = () => {
           description="News Agency Website with admin dashboard. Made with React.js, Java Spring and PostgreSQL."
           logoDark={uncosLogoDark}
           logoLight={uncosLogoLight}
-          url="https://uncos.saizaax.xyz"
+          url="https://uncos.saizaax.dev"
           github="https://github.com/saizaax/uncos"
           stack={[
             [js, js],
@@ -82,7 +82,7 @@ const Projects = () => {
             description="Next Pizza Website. Made with Next.js, Redux, TypeScript, Prisma and PlanetScale."
             logoDark={pizzaLogoDark}
             logoLight={pizzaLogoLight}
-            url="https://pizza.saizaax.xyz"
+            url="https://pizza.saizaax.dev"
             github="https://github.com/saizaax/next-pizza"
             stack={[
               [ts, ts],
@@ -102,7 +102,7 @@ const Projects = () => {
             description="Xanity — Hardware Store Website. Made with React.js, TypeScript, Nest.js, MongoDB."
             logoDark={xanityLogoDark}
             logoLight={xanityLogoLight}
-            url="https://xanity.saizaax.xyz"
+            url="https://xanity.saizaax.dev"
             github="https://github.com/saizaax/xanity"
             stack={[
               [ts, ts],
@@ -122,7 +122,7 @@ const Projects = () => {
           description="Yet Another Schedule App — web schedule application for RTU MIREA university. Made with React.js, Express and PostgreSQL."
           logoDark={scheduleLogoDark}
           logoLight={scheduleLogoLight}
-          url="https://schedule.saizaax.xyz"
+          url="https://schedule.saizaax.dev"
           github="https://github.com/saizaax/yet-another-schedule-app"
           stack={[
             [ts, ts],

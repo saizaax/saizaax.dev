@@ -1,6 +1,6 @@
 # SAIZAAX.DEV — Personal Portfolio Website ⚡
 
-[![saizaax.xyz](https://img.shields.io/website?down_message=offline&label=saizaax.xyz&up_message=online&url=https%3A%2F%2Fsaizaax.xyz%2F)](https://saizaax.xyz/)
+[![saizaax.dev](https://img.shields.io/website?down_message=offline&label=saizaax.dev&up_message=online&url=https%3A%2F%2Fsaizaax.dev%2F)](https://saizaax.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3077C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![ReactJS](https://img.shields.io/badge/React.js-282C34?logo=react&logoColor=white)](https://reactjs.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs)](https://nextjs.org/)
@@ -11,7 +11,7 @@
 ![](preview.png)
 
 <h3 align="center">
-✨ Preview • <a href="https://saizaax.xyz/">saizaax.xyz</a>
+✨ Preview • <a href="https://saizaax.dev/">saizaax.dev</a>
 </h3>
 
 ## Technologies
